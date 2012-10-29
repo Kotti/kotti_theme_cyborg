@@ -3,7 +3,7 @@ import os
 from setuptools import find_packages
 from setuptools import setup
 
-version = '1.0'
+version = '0.1'
 project = 'kotti_theme_cyborg'
 
 tests_require = [
