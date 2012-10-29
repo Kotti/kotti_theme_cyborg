@@ -3,18 +3,8 @@ import os
 from setuptools import find_packages
 from setuptools import setup
 
-version = '0.1'
+version = '0.2'
 project = 'kotti_theme_cyborg'
-
-tests_require = [
-    'WebTest',
-    'mock',
-    'pytest',
-    'pytest-cov',
-    'pytest-xdist',
-    'wsgi_intercept',
-    'zope.testbrowser',
-    ]
 
 here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, 'README.rst')).read()
@@ -27,7 +17,7 @@ setup(name=project,
       classifiers=[
         "Programming Language :: Python",
         "Framework :: Pyramid",
-        "License :: Repoze Public License",
+        "License :: BSD",
         ],
       keywords='kotti theme',
       author='Andreas Kaiser',
@@ -40,15 +30,16 @@ setup(name=project,
       install_requires=[
           'Kotti',
       ],
-      tests_require=tests_require,
       entry_points={
         'fanstatic.libraries': [
           'kotti_theme_cyborg = kotti_theme_cyborg.static:library',
         ],
       },
       extras_require={
-          'testing': tests_require,
-          },
+        'development': [
+            'minify',
+        ]
+      },
       message_extractors={'kotti_theme_cyborg': [
             ('**.py', 'lingua_python', None),
             ('**.zcml', 'lingua_xml', None),
