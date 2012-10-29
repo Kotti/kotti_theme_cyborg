@@ -22,7 +22,7 @@ CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 
 setup(name=project,
       version=version,
-      description="AddOn for Kotti",
+      description="Cyborg theme from http://bootswatch.com/cyborg/ for Kotti",
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
         "Programming Language :: Python",
