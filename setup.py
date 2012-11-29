@@ -33,7 +33,7 @@ setup(
     ],
     entry_points={
         'fanstatic.libraries': [
-            'kotti_theme_cyborg = kotti_theme_cyborg.static:library',
+            'kotti_theme_cyborg = kotti_theme_cyborg:library',
         ],
     },
     extras_require={
