@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.3
+---
+
+-   Add missing images for icons.
+
 0.2
 ---
 

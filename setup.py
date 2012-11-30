@@ -18,7 +18,6 @@ setup(
     classifiers=[
         "Programming Language :: Python",
         "Framework :: Pyramid",
-        "License :: BSD",
     ],
     keywords='kotti theme',
     author='Andreas Kaiser',
